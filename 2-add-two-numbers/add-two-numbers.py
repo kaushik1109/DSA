@@ -15,7 +15,6 @@ class Solution(object):
         current = dummy
 
         carry = 0
-        # sum = 0
 
         while l1 or l2:
             sum = carry
@@ -40,4 +39,16 @@ class Solution(object):
             
 
         return dummy.next
+
+
+
+# Logic for revision:
+
+# Use a dummy node to build the result list without special head handling.
+# Traverse while at least one list still has nodes (lists may be unequal length).
+# At each step, add digits from l1 and l2 along with carry from previous sum.
+# Create a new node with digit = sum % 10 and update carry using sum // 10.
+# Move pointers forward in both lists when available.
+# After traversal, append a final node if a carry remains.
+
         
