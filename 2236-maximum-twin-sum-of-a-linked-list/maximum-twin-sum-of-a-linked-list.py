@@ -36,6 +36,16 @@ class Solution(object):
         
         return maxSum
 
+
+
+# Logic:
+# Use fast and slow pointers to locate the start of the second half of the list.
+# Reverse the second half of the linked list in-place to simulate backward traversal.
+# Initialize two pointers: one at the head of the list and one at the reversed second half.
+# Traverse both halves together, computing twin sums for corresponding nodes.
+# Track and return the maximum twin sum encountered.
+
+
        
 
 
